@@ -1,0 +1,59 @@
+! vim: ft=xdefaults:
+
+! font rendering
+Xft.dpi:				100
+Xft.antialias:		true
+!Xft.rgba:			rgba
+Xft.hinting:		true
+Xft.hintstyle:		hintfull
+Xft.lcdfilter:		lcddefault
+
+xterm*utf8:			1
+xterm*saveLines:	512
+
+URxvt*cursorBlink:			true
+URxvt*cursorUnderline:		true
+URxvt*termName:				xterm-color
+
+URxvt*pastableTabs:			true
+URxvt*scrollBar:				false
+URxvt*skipBuiltinGlyphs:	true
+
+URxvt*transparent:			true
+URxvt*inheritPixmap:			true
+URxvt*depth:					32
+
+!URxvt*font:					xft:Inconsolata:pixelsize=13
+!URxvt*font:					xft:GohuFont:regular:pixelsize=11
+!URxvt*boldFont:				xft:GohuFont:regular:pixelsize=11
+URxvt*font:						xft:Envy Code R:medium:pixelsize=12
+URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12
+
+#include "/home/jac/.config/xcolors/delerious010"
+*foreground:    #050505
+*background:    #ffffff
+
+!#include "/home/jac/.config/xcolors/vimbrant"
+!*foreground:#d0d0d0
+!*background:#0b0d0e
+!*foreground:    #ffffff
+!*background:    #050505
+
+!#include "/home/jac/.config/xcolors/tango"
+!*foreground:#f0f0f0
+!*background:#000000
+
+!#include "/home/jac/.config/xcolors/solarized"
+!#include "/home/jac/.config/xcolors/solarized_light"
+
+! tango with Thayer fg/bg?
+
+! Daisuke2, very nice
+!#include "/home/jac/.config/xcolors/Daisuke2"
+!*foreground: #EEFFEE
+!*background: #0C0C0C
+
+!#include "/home/jac/.config/xcolors/jac"
+!#include "/home/jac/.config/xcolors/rakka"
+!#include "/home/jac/.config/xcolors/jac_002"
+
