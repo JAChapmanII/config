@@ -1,0 +1,30 @@
+[user]
+	name = Jeff Chapman II
+	email = jac@JAChapmanII.net
+[core]
+	editor = vim
+	autocrlf = input
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[alias]
+	last = log -1 HEAD
+	unstage = reset HEAD --
+	untrack = rm --cached
+	ci = commit
+	co = checkout
+	ce = checkout experimental
+	cm = checkout master
+	p = push
+	po = push origin
+	pom = push origin master
+	poe = push origin experimental
+	pu = pull origin
+	pum = pull origin master
+	pue = pull origin experimental
+	stash-unapply = !git stash show -p | git apply -R
+	s = status
+	c = clone
+	b = branch
+	sm = submodule
