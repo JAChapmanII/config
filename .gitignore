@@ -1,2 +1,8 @@
 *.hi
 *.o
+
+viminfo
+vim/
+
+blender/
+gimp-2.6/
