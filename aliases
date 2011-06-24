@@ -1,0 +1,23 @@
+# everyday aliases
+alias s="ssh"
+alias g="git"
+alias v="vim"
+alias t="tmux"
+alias h="htop -u jac"
+
+# compiling aliases
+alias m="make"
+alias mp="makepkg"
+
+# ls aliases
+alias l='ls --color=auto'
+alias ls='ls --color=auto'
+alias la="ls --color=auto -A"
+alias ll="ls --color=auto -l"
+alias lla="ls --color=auto -lA"
+
+# miscellaneous aliases
+alias mkdir="mkdir -p"
+alias rm="rm -I"
+
+# vim: ft=sh:
