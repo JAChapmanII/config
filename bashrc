@@ -6,6 +6,7 @@ export LC_COLLATE=${LC_COLLATE-C}
 export HOME=${HOME-/home/$(whoami)}
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME-${HOME}/.config}
 
+export HOST=${HOST-$HOSTNAME}
 export HOST=${HOST-$(hostname)}
 
 localBashrc="${XDG_CONFIG_HOME}/bashrc-${HOST}"
@@ -68,8 +69,6 @@ function cd() {
 		builtin cd "$p"
 		if git rev-parse &>/dev/null; then
 			PMAP[$i]='\e[1;32m'
-			#PMAP[$i]='\e[4;32m'
-			#PMAP[$i]='\e[42m'
 		else
 			PMAP[$i]='\e[0;36m'
 		fi
@@ -88,7 +87,12 @@ function cd() {
 	done
 	unset IFS
 
-	export PS1="(${FDIR})> "
+	SPART=
+	if [[ -n "$SCHROOT_SESSION_ID" ]]; then
+		SPART='\[\e[0;31m\][32]\[\e[0m\]'
+	fi
+
+	export PS1="(${FDIR})${SPART}> "
 }
 cd
 
