@@ -3,11 +3,11 @@
 BASE="/dev/shm/home.$(whoami)"
 mkdir -p "${BASE}"
 
-linkDirs=( .config/chromium .config/minecraft .cache/chromium )
+linkDirs=( .config/chromium .config/minecraft .cache/chromium "VirtualBox VMs" )
 for (( i = 0; i < ${#linkDirs[@]}; ++i )); do
 	mkdir -p "${BASE}/${linkDirs[$i]}"
 	if [[ ! -h "${HOME}/${linkDirs[$i]}" ]] ||
-		[[ "$(readlink ${HOME}/${linkDirs[$i]})" != "${BASE}/${linkDirs[$i]}" ]]; then
+		[[ "$(readlink "${HOME}/${linkDirs[$i]}")" != "${BASE}/${linkDirs[$i]}" ]]; then
 		rm -f -r "${HOME}/${linkDirs[$i]}"
 		ln -s "${BASE}/${linkDirs[$i]}" "${HOME}/${linkDirs[$i]}"
 	fi
