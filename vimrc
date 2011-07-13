@@ -53,9 +53,7 @@ endif
 " Strip extra ending space on write
 "autocmd BufWritePre * :%s/\s\+$//e
 
-"highlight OverLength ctermbg=lightgrey ctermfg=darkgrey
-"highlight OverLength ctermbg=red ctermfg=blue
-"match OverLength /\%81v.*/
+" Highlight long lines
 match ErrorMsg '\%>80v.\+'
 
 set textwidth=78
