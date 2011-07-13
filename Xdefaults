@@ -1,12 +1,14 @@
 ! vim: ft=xdefaults:
 
+URxvt.perl-ext-common:  clipboard
+
 ! font rendering
 Xft.dpi:				100
 Xft.antialias:		true
 !Xft.rgba:			rgba
-Xft.hinting:		true
-Xft.hintstyle:		hintfull
-Xft.lcdfilter:		lcddefault
+!Xft.hinting:		true
+!Xft.hintstyle:		hintfull
+!Xft.lcdfilter:		lcddefault
 
 xterm*utf8:			1
 xterm*saveLines:	512
@@ -17,18 +19,31 @@ URxvt*termName:				xterm-color
 
 URxvt*pastableTabs:			true
 URxvt*scrollBar:				false
-URxvt*skipBuiltinGlyphs:	true
-
-URxvt*transparent:			true
-URxvt*inheritPixmap:			true
-URxvt*depth:					32
+!URxvt*skipBuiltinGlyphs:	true
 
 !URxvt*font:					xft:Inconsolata:pixelsize=13
 !URxvt*font:					xft:GohuFont:regular:pixelsize=11
 !URxvt*boldFont:				xft:GohuFont:regular:pixelsize=11
+
+!URxvt*transparent:			true
+!URxvt*inheritPixmap:			true
+!URxvt*depth:					32
+
+xterm*boldMode: false
+!*font:						xft:Envy Code R:medium:pixelsize=12
+!*boldFont:				xft:Envy Code R:medium:pixelsize=12
+! -*-envy code r-medium-r-normal--17-*-*-*-*-*-*-*
+
 URxvt*font:						xft:Envy Code R:medium:pixelsize=12
 URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12
-
+!URxvt*font:						xft:Envy Code R:medium:pixelsize=12:spacing=40
+!URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12:spacing=40
+!URxvt*font:						xft:Envy Code R:medium:pixelsize=10:size=6
+!URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=10:size=6
+!URxvt*font:						xft:Envy Code R:medium:pixelsize=12
+!URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12
+!URxvt*font:					xft:GohuFont:regular:pixelsize=11
+!URxvt*boldFont:			xft:GohuFont:regular:pixelsize=11
 #include "/home/jac/.config/xcolors/delerious010"
 *foreground:    #050505
 *background:    #ffffff
@@ -56,4 +71,17 @@ URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12
 !#include "/home/jac/.config/xcolors/jac"
 !#include "/home/jac/.config/xcolors/rakka"
 !#include "/home/jac/.config/xcolors/jac_002"
+
+!URxvt*font:						xft:Envy Code R:medium:pixelsize=12
+!URxvt*boldFont:				xft:Envy Code R:medium:pixelsize=12
+!URxvt*font: xft:terminus:pixelsize=12
+
+!URxvt*font:					xft:GohuFont:regular:pixelsize=11
+!URxvt*boldFont:			xft:GohuFont:regular:pixelsize=11
+!#include "/home/jac/.config/xcolors/jackh79-night"
+!*background:    #0a0908
+!*foreground:    #b4b4b4
+
+!URxvt*transparent:    true
+!URxvt*shading:        100
 
