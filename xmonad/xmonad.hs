@@ -85,7 +85,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
 ------------------------------------------------------------------------
 -- Layouts
-myLayout = tiled ||| Mirror tiled ||| Full ||| nmtiled
+myLayout = tiled ||| nmtiled ||| Mirror tiled ||| Full
   where
      tiled   = Tall nmaster delta ratio
      -- Coding layout. Allows for (assuming Envy Code R 13):
