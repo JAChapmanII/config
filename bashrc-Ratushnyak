@@ -3,7 +3,7 @@
 BASE="/dev/shm/home.$(whoami)"
 mkdir -p "${BASE}"
 
-linkDirs=( .config/chromium .config/minecraft .cache/chromium "VirtualBox VMs" )
+linkDirs=( .config/chromium .config/minecraft .config/thumbnails .cache/chromium "VirtualBox VMs" Dropbox )
 for (( i = 0; i < ${#linkDirs[@]}; ++i )); do
 	mkdir -p "${BASE}/${linkDirs[$i]}"
 	if [[ ! -h "${HOME}/${linkDirs[$i]}" ]] ||
