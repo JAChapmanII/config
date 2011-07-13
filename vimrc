@@ -53,8 +53,10 @@ endif
 " Strip extra ending space on write
 "autocmd BufWritePre * :%s/\s\+$//e
 
-highlight OverLength ctermbg=lightgrey ctermfg=darkgrey
-match OverLength /\%81v.*/
+"highlight OverLength ctermbg=lightgrey ctermfg=darkgrey
+"highlight OverLength ctermbg=red ctermfg=blue
+"match OverLength /\%81v.*/
+match ErrorMsg '\%>80v.\+'
 
 set textwidth=78
 set formatoptions=c,q,r,t
@@ -65,7 +67,8 @@ set pastetoggle=<F2>
 set showmode
 
 " Colorscheme
-"colorscheme anotherdark
+colorscheme anotherdark
 
 set background=light
+"set background=dark
 
