@@ -3,7 +3,7 @@
 BASE="/dev/shm/home.$(whoami)"
 mkdir -p "${BASE}"
 
-linkDirs=( .config/chromium .config/minecraft .config/thumbnails .cache/chromium "VirtualBox VMs" Dropbox )
+linkDirs=( .config/chromium .config/minecraft .config/thumbnails .cache/chromium)
 for (( i = 0; i < ${#linkDirs[@]}; ++i )); do
 	mkdir -p "${BASE}/${linkDirs[$i]}"
 	if [[ ! -h "${HOME}/${linkDirs[$i]}" ]] ||
@@ -12,4 +12,8 @@ for (( i = 0; i < ${#linkDirs[@]}; ++i )); do
 		ln -s "${BASE}/${linkDirs[$i]}" "${HOME}/${linkDirs[$i]}"
 	fi
 done
+
+if [[ $(tty) == "/dev/tty1" ]]; then
+	setfont /usr/share/kbd/consolefonts/ter-u12n.psf.gz
+fi
 
