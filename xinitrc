@@ -15,6 +15,17 @@ xset r rate 160 80
 
 numlockx
 
+HOST="${HOST-$HOSTNAME}"
+HOST="${HOST-$(hostname)}"
+
+case $HOST in
+	Ratushnyak)
+		xrandr --output DVI-I-1 --mode 2560x1600 \
+			--output DVI-I-2 --mode 1600x1200 --rotate left --left-of DVI-I-1 ;;
+	*)
+		echo "No screen adjustments made" ;;
+esac
+
 session="${1-xmonad}"
 case $session in
 	[Xx]*) exec ck-launch-session xmonad   ;;
