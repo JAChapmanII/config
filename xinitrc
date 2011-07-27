@@ -26,8 +26,8 @@ case $HOST in
 		echo "No screen adjustments made" ;;
 esac
 
-session="${1-xmonad}"
-case $session in
+export XSESSION="${1-xmonad}"
+case $XSESSION in
 	[Xx]*) exec ck-launch-session xmonad   ;;
 	[Kk]*) exec ck-launch-session startkde ;;
 esac
