@@ -1,0 +1,23 @@
+Host jachapmanii
+	Hostname jachapmanii.net
+
+Host wirth
+	Hostname wirth.cs.uakron.edu
+	User jac162
+
+Host knuth
+	Hostname knuth.cs.uakron.edu
+	User jac162
+
+Host berry
+	Hostname berry.cs.uakron.edu
+	User jac162
+
+Host pacs
+	Hostname pacs.cs.uakron.edu
+	User jac162
+
+Host uadwa
+	Hostname 192.168.1.131
+	User uadwa
+
