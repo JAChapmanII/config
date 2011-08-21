@@ -26,6 +26,10 @@ case $HOST in
 		echo "No screen adjustments made" ;;
 esac
 
+if [[ -f "${XDG_CONFIG_HOME}/fehbg" ]]; then
+	eval $(cat "${XDG_CONFIG_HOME}/fehbg")
+fi
+
 export XSESSION="${1-xmonad}"
 case $XSESSION in
 	[Xx]*) exec ck-launch-session xmonad   ;;
