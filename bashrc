@@ -67,7 +67,9 @@ function cd() {
 	for (( i = 0; i < ${#PPIECES[@]}; ++i )); do
 		p="$p/${PPIECES[$i]}"
 		builtin cd "$p"
-		if git rev-parse &>/dev/null; then
+		if ! which git; then
+			PMAP[$i]='\e[0;36m'
+		elif git rev-parse &>/dev/null; then
 			PMAP[$i]='\e[1;32m'
 		else
 			PMAP[$i]='\e[0;36m'
