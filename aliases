@@ -18,6 +18,6 @@ alias lla="ls --color=auto -lA"
 
 # miscellaneous aliases
 alias mkdir="mkdir -p"
-alias rm="rm -I"
+#alias rm="rm -I"
 
 # vim: ft=sh:
