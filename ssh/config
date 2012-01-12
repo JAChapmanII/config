@@ -1,23 +1,37 @@
-Host jachapmanii
+Host jachapmanii j
 	Hostname jachapmanii.net
 
-Host wirth
+Host wirth w
 	Hostname wirth.cs.uakron.edu
 	User jac162
 
-Host knuth
+Host knuth k
 	Hostname knuth.cs.uakron.edu
 	User jac162
 
-Host berry
+Host berry b
 	Hostname berry.cs.uakron.edu
 	User jac162
 
-Host pacs
+Host pacs p
 	Hostname pacs.cs.uakron.edu
 	User jac162
 
 Host uadwa
 	Hostname 192.168.1.131
 	User uadwa
+
+Host grandma g
+	Hostname 75.186.132.199
+	Port 2909
+	User root
+
+Host huxley h
+	Hostname 24.165.212.10
+	Port 50000
+	User jac
+
+Host mamtas m
+	Hostname 192.168.1.146
+	Port 2909
 
