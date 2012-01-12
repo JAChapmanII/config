@@ -1,11 +1,13 @@
 ! font rendering
 Xft.dpi:       100
 Xft.antialias: true
+!Xft.antialias: false
 
 ! font
-URxvt*font:     xft:Envy Code R:medium:pixelsize=12
 !URxvt*font:     bitocrafull:pixelsize=12
+URxvt*font:     xft:Envy Code R:medium:pixelsize=12
 URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
+!URxvt*font:     xft:terminus:pixelsize=12
 
 ! urxvt cursor
 URxvt*cursorBlink:     true
