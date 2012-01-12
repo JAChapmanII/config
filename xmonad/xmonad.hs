@@ -59,6 +59,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
+
+    , ((0, 0x1008FF11 ), spawn "volume -")
+    , ((0, 0x1008FF12 ), spawn "volume mute")
+    , ((0, 0x1008FF13 ), spawn "volume +")
     ]
     ++
 
