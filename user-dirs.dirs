@@ -1,0 +1,9 @@
+DESKTOP=Desktop
+DOCUMENTS=Documents
+DOWNLOAD=Complete
+MUSIC=Music
+PICTURES=Graphics
+PUBLICSHARE=Public
+TEMPLATES=Templates
+VIDEOS=Videos
+XDG_DOWNLOAD_DIR="$HOME/Complete"
