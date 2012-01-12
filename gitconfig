@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+	excludesfile = /home/jac/.config/global_gitignore
 [color]
 	diff = auto
 	status = auto
@@ -25,6 +26,8 @@
 	pue = pull origin experimental
 	stash-unapply = !git stash show -p | git apply -R
 	s = status
+	a = add
 	c = clone
+	d = diff
 	b = branch
 	sm = submodule
