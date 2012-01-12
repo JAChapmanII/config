@@ -17,3 +17,10 @@ ssh/id_rsa
 ssh/id_rsa.pub
 ssh/known_hosts
 
+# history files
+bash_history
+lesshst
+
+# local session files
+rtorrent_session/
+
