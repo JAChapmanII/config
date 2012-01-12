@@ -1,0 +1,21 @@
+! https://github.com/trapd00r/configs/blob/master/Xcolors/trapd00r_default.Xresources
+*color0: #121212
+*color1: #262626
+*color2: #4d4c4c
+*color3: #ff8f00
+*color4: #1165e9
+*color5: #89005a
+*color6: #ff3500
+*color7: #ffffff
+*color8: #484848
+*color9: #ff6767
+*color10: #b03b31
+*color11: #bdf13d
+*color12: #5496ff
+*color13: #b50077
+*color14: #6be603
+*color15: #dedede
+
+!color16
+*background: #000000
+*foreground: #ffffff
