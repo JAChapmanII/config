@@ -4,6 +4,8 @@ alias g="git"
 alias v="vim"
 alias t="tmux"
 alias h="htop -u jac"
+alias p="pacman"
+alias sp="sudo pacman"
 
 # compiling aliases
 alias m="make"
@@ -18,6 +20,8 @@ alias lla="ls --color=auto -lA"
 
 # miscellaneous aliases
 alias mkdir="mkdir -p"
+alias x="xinit"
+alias w="whois -H"
 #alias rm="rm -I"
 
 # vim: ft=sh:

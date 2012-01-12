@@ -4,6 +4,7 @@ Xft.antialias: true
 
 ! font
 URxvt*font:     xft:Envy Code R:medium:pixelsize=12
+!URxvt*font:     bitocrafull:pixelsize=12
 URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
 
 ! urxvt cursor
@@ -30,5 +31,10 @@ URxvt*depth:         32
 #include     "/home/jac/.config/xcolors/delerious010"
 *foreground: #050505
 *background: #ffffff
+
+! dark colorscheme
+!#include "/home/jac/.config/xcolors/tango"
+!*background: #151515
+!*foreground: #cacdc6
 
 ! vim: ft=xdefaults:

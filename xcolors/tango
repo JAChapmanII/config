@@ -1,12 +1,12 @@
 ! ----------------------------------------------------------------------
 ! file:     Xdefaults color scheme
-! vim:enc=utf-8:nu:ai:si:et:ts=4:sts=4:sw=4:ft=xdefaults:
+! vim:nu:ai:si:et:ts=4:sts=4:sw=4:ft=xdefaults:
 ! ----------------------------------------------------------------------
 
 ! tango theme I first used back in April 2008 (xmonad/awesome setup)
 
 ! tangoesque scheme
-*background:  #333333
+*background:  #222222
 *foreground:  #888888
 
 ! Black
