@@ -44,7 +44,7 @@ PS1='[~]$ '
 function cd() {
 	dest="${@-$HOME}"
 	if [[ ! -d "$dest" ]]; then
-		echo "$dest does not exist"
+		echo "cd: $dest: No such directory"
 		return 1
 	fi
 	builtin cd "$dest"
