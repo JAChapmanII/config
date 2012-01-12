@@ -19,9 +19,11 @@ ssh/known_hosts
 
 # history files
 bash_history
+fish/fish_history
 lesshst
 
 # local session files
 rtorrent_session/
+fish/fishd.*
 
 gh_config
