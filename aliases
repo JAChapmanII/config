@@ -22,6 +22,7 @@ alias lla="ls --color=auto -lA"
 alias mkdir="mkdir -p"
 alias x="xinit"
 alias w="whois -H"
+alias 80n="echo 0000 01234567890123456789012345678901234567890123456789012345678901234567890123456789"
 #alias rm="rm -I"
 
 # vim: ft=sh:
