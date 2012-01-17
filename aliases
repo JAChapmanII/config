@@ -5,8 +5,11 @@ alias v="vim"
 alias sv="sudo vim"
 alias t="tmux"
 alias h="htop -u jac"
+
+# package management
 alias p="pacman"
 alias sp="sudo pacman"
+alias spk="sudo pacman-key"
 
 # compiling aliases
 alias m="make"
