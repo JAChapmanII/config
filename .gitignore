@@ -25,5 +25,6 @@ lesshst
 # local session files
 rtorrent_session/
 fish/fishd.*
+evars
 
 gh_config
