@@ -1,10 +1,12 @@
 # everyday aliases
+alias c="cd"
 alias s="ssh"
 alias g="git"
 alias v="vim"
 alias sv="sudo vim"
 alias t="tmux"
 alias h="htop -u jac"
+alias up="cd .."
 
 # package management
 alias p="pacman"
@@ -27,6 +29,7 @@ alias mkdir="mkdir -p"
 alias x="xinit"
 alias w="whois -H"
 alias 80n="echo 0000 01234567890123456789012345678901234567890123456789012345678901234567890123456789"
+alias 120n="echo 0000 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789"
 #alias rm="rm -I"
 
 # vim: ft=sh:
