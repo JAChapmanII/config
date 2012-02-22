@@ -89,12 +89,16 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
 ------------------------------------------------------------------------
 -- Layouts
-myLayout = tiled ||| nmtiled ||| Mirror tiled ||| Full
+myLayout = tiled ||| nmtiled ||| pageNine ||| Mirror tiled ||| Full
   where
      tiled   = Tall nmaster delta ratio
      -- Coding layout. Allows for (assuming Envy Code R 13):
      -- (80-width term)[Filling Browser](80/80-width split tmux)
      nmtiled = mastered (1/100) (81/400) $ Tall nmaster delta (49/100)
+     -- (80-width term)(80-width term)[filling term]
+     -- pageNine = mastered (1/100) (65/200) $ Tall nmaster delta (12/25)
+     -- [filling pane](80-width term)(little over 120-width term)
+     pageNine = mastered (1/100) (3/16) $ Tall nmaster delta (4/10)
 
      nmaster = 1
      ratio   = 1/2
@@ -129,7 +133,8 @@ defaults = defaultConfig {
         focusFollowsMouse  = myFocusFollowsMouse,
         borderWidth        = myBorderWidth,
         modMask            = myModMask,
-        numlockMask        = myNumlockMask,
+        -- TODO: this used to work
+        --numlockMask        = myNumlockMask,
         workspaces         = myWorkspaces,
         normalBorderColor  = myNormalBorderColor,
         focusedBorderColor = myFocusedBorderColor,
@@ -145,3 +150,5 @@ defaults = defaultConfig {
         logHook            = myLogHook,
         startupHook        = myStartupHook
     }
+
+-- vim: et:
