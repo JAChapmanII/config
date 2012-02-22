@@ -35,3 +35,13 @@ Host mamtas m
 	Hostname 192.168.1.146
 	Port 2909
 
+Host zetva z
+	Hostname 192.168.1.147
+	Port 2909
+	User root
+
+Host ultra ul
+	Hostname 71.66.111.139
+	Port 2909
+	User root
+
