@@ -34,5 +34,6 @@ export XSESSION="${1-xmonad}"
 case $XSESSION in
 	[Xx]*) exec ck-launch-session xmonad   ;;
 	[Kk]*) exec ck-launch-session startkde ;;
+	[Ii]*) exec ck-launch-session i3       ;;
 esac
 
