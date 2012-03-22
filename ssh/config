@@ -1,5 +1,8 @@
-Host jachapmanii j
-	Hostname jachapmanii.net
+Host hughes.jachapmanii h
+	Hostname hughes.jachapmanii.net
+
+Host frost.jachapmanii f
+	Hostname frost.jachapmanii.net
 
 Host wirth w
 	Hostname wirth.cs.uakron.edu
@@ -26,7 +29,7 @@ Host grandma g
 	Port 2909
 	User root
 
-Host huxley h
+Host huxley
 	Hostname 24.165.212.10
 	Port 50000
 	User jac
