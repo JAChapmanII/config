@@ -15,6 +15,9 @@ xset r rate 160 80
 
 numlockx
 
+autocutsel -fork &
+autocutsel -selection PRIMARY -fork &
+
 HOST="${HOST-$HOSTNAME}"
 HOST="${HOST-$(hostname)}"
 
