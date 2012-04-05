@@ -30,7 +30,7 @@ URxvt*inheritPixmap: true
 URxvt*depth:         32
 
 ! light colorscheme
-#include     "/home/jac/.config/xcolors/delerious010"
+#include "/home/jac/.config/xcolors/delerious010"
 *foreground: #050505
 *background: #ffffff
 
