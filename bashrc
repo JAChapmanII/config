@@ -39,6 +39,9 @@ if [[ -d "/etc/profile.d" ]]; then
 	done
 fi
 
+[[ -f ${XDG_CONFIG_HOME}/dircolors ]] &&
+	eval $(dircolors ${XDG_CONFIG_HOME}/dircolors)
+
 PS1='[~]$ '
 
 function cd() {
