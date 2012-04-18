@@ -1,6 +1,8 @@
 set nocompatible
+set encoding=utf-8
 
 " Appearance options
+set t_Co=256
 filetype on
 filetype plugin on
 filetype indent on
@@ -66,8 +68,7 @@ set showmode
 
 " Colorscheme
 colorscheme anotherdark
-
-set background=light
+"set background=light
 "set background=dark
 
 " Transparent editing of gpg encrypted files
