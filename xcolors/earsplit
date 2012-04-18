@@ -1,0 +1,27 @@
+! earsplit: https://bbs.archlinux.org/viewtopic.php?id=138787&p=11 #273
+*background:	#2c2c2c
+*foreground:	#ffffff
+! Black
+*color0:	#363636
+*color8:	#424242
+! Red 
+*color1:	#c37561
+*color9:	#d19485
+! Green
+*color2:	#a0a57e
+*color10:	#b6d99d
+! Yellow
+*color3:	#d1a375
+*color11:	#debc9c
+! Blue
+*color4:	#7985a3
+*color12:	#98a1b9
+! Purple
+*color5:	#ab716d
+*color13:	#be918e
+! Cyan
+*color6:	#98b9b1
+*color14:	#cbe6cb
+! White
+*color7:	#d0d0d0
+*color15:	#e6e6e6
