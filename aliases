@@ -7,6 +7,7 @@ alias sv="sudo vim"
 alias t="tmux"
 alias h="htop -u jac"
 alias up="cd .."
+alias time="~/bin/time"
 
 # tmux
 alias trn="tmux rename-session -t"
@@ -27,6 +28,7 @@ alias ls='ls --color=auto'
 alias la="ls --color=auto -A"
 alias ll="ls --color=auto -lh"
 alias lla="ls --color=auto -lA"
+alias lstar="tar --list -f "
 
 # miscellaneous aliases
 alias mkdir="mkdir -p"
