@@ -38,5 +38,6 @@ case $XSESSION in
 	[Xx]*) exec ck-launch-session xmonad   ;;
 	[Kk]*) exec ck-launch-session startkde ;;
 	[Ii]*) exec ck-launch-session i3       ;;
+	[Dd]*) exec ck-launch-session dwm      ;;
 esac
 
