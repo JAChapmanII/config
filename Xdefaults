@@ -1,14 +1,11 @@
 ! font rendering
 Xft.dpi:       100
-Xft.antialias: true
-!Xft.antialias: false
+Xft.antialias: false
 
 ! font
-!URxvt*font:     xft:Envy Code R:medium:pixelsize=12
-!URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
-!URxvt*font:     bitocrafull:pixelsize=12
-!URxvt*font:     xft:terminus:pixelsize=12
-URxvt*font:     -*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
+URxvt*font:     xft:Envy Code R:medium:pixelsize=12
+URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
+*letterSpace: -1
 
 ! urxvt cursor
 URxvt*cursorBlink:     true
@@ -31,19 +28,6 @@ URxvt*inheritPixmap: true
 URxvt*depth:         32
 
 ! light colorscheme
-!#include "/home/jac/.config/xcolors/delerious010"
-!*foreground: #050505
-!*background: #ffffff
-
-! alternate light colorscheme
-!#include "/home/jac/.config/xcolors/thayer_lightr_early"
-!*foreground: #303030
-!*color0:    #444444
-!*color8:    #111111
-
-! dark colorscheme
-#include "/home/jac/.config/xcolors/tango"
-*background: #151515
-*foreground: #cacdc6
+#include "/home/jac/.config/xcolors/del_mod"
 
 ! vim: ft=xdefaults:

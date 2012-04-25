@@ -67,8 +67,8 @@ set pastetoggle=<F2>
 set showmode
 
 " Colorscheme
-colorscheme anotherdark
-"set background=light
+"colorscheme anotherdark
+set background=light
 "set background=dark
 
 " Transparent editing of gpg encrypted files
