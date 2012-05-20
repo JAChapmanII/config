@@ -17,3 +17,7 @@ if [[ $(tty) == "/dev/tty1" ]]; then
 	setfont /usr/share/kbd/consolefonts/ter-u12n.psf.gz
 fi
 
+if [[ -z $(pgrep mpd) ]] && [[ -d $(readlink ${HOME}/Music) ]]; then
+	mpd &
+fi
+
