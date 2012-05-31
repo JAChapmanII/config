@@ -23,11 +23,13 @@ gh_config
 bash_history
 fish/fish_history
 lesshst
+seed_history
 
 # local session files
 rtorrent_session/
 fish/fishd.*
 evars
+xsel.log
 
 # stuff I would rather do without
 macromedia
