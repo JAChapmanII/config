@@ -3,8 +3,10 @@ Xft.dpi:       100
 Xft.antialias: false
 
 ! font
-URxvt*font:     xft:Envy Code R:medium:pixelsize=12
-URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
+!URxvt*font:     xft:Envy Code R:medium:pixelsize=12
+!URxvt*boldFont: xft:Envy Code R:medium:pixelsize=12
+URxvt*font:     -ypn-envypn-*-*-*-*-13-*-*-*-*-*-*-*
+URxvt*boldFont: -ypn-envypn-*-*-*-*-13-*-*-*-*-*-*-*
 *letterSpace: -1
 
 ! urxvt cursor
@@ -29,5 +31,10 @@ URxvt*depth:         32
 
 ! light colorscheme
 #include "/home/jac/.config/xcolors/del_mod"
+
+! dark colorscheme
+!#include "/home/jac/.config/xcolors/tango"
+!*background:  #111111
+!*foreground:  #dddddd
 
 ! vim: ft=xdefaults:
