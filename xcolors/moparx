@@ -1,0 +1,38 @@
+! ----------------------------------------------------------------------
+! file:     ~/.Xresources
+! author:   christopher w. (moparx) - moparx.com
+! date:     2011/02/01
+! vim:ai:si:ts=5:sw=5:et:nu:fdm=indent:fdn=1:
+! ----------------------------------------------------------------------
+
+
+! settings -------------------------------------------------------------
+
+Xcursor*theme:            Neutral_Plus
+Xft*antialias:            true
+Xft*dpi:                  96
+
+
+! urxvt settings -------------------------------------------------------
+
+URxvt*background:         #242424
+URxvt*boldFont:           xft:Terminus:pixelsize=8
+URxvt*colorUL:            #86A2BE
+URxvt*cursorBlink:        true
+URxvt*font:               xft:Terminus:pixelsize=8
+URxvt*foreground:         #FFFFFF
+URxvt*geometry:           80x25
+URxvt.imLocale:           en_US.UTF-8
+URxvt*internalBorder:     0
+URxvt*jumpScroll:         true
+URxvt*loginShell:         true
+URxvt*perl-ext-common:    default,matcher,searchable-scrollback
+URxvt*pointerBlank:       true
+URxvt*saveLines:          4000
+URxvt*scrollBar:          false
+URxvt*scrollTtyKeypress:  true
+URxvt*scrollWithBuffer:   true
+URxvt*secondaryScroll:    true
+URxvt*termName:           rxvt-unicode
+URxvt*underlineColor:     #86A2BE
+URxvt*urlLauncher:        chromium

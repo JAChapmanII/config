@@ -1,0 +1,39 @@
+! https://gist.github.com/2342283
+! Farben, based on Thayer:
+! http://cinderwick.ca/files/configs/Xdefaults
+XTerm*background:  #0e0e0e
+XTerm*foreground:  #aaaaaa
+XTerm*cursorColor: #ffffff
+! Black
+XTerm*color0:      #000000
+XTerm*color8:      #555753
+! Red
+XTerm*color1:      #ff6565
+XTerm*color9:      #cf0000
+! Green
+XTerm*color2:      #93d44f
+XTerm*color10:     #00cf00
+! Yellow
+XTerm*color3:      #eab93d
+XTerm*color11:     #ffc123
+! Blue
+XTerm*color4:      #204a87
+XTerm*color12:     #3465a4
+! Mangenta
+XTerm*color5:      #ce5c00
+XTerm*color13:     #f57900
+! Cyan
+XTerm*color6:      #89b6e2
+XTerm*color14:     #46a4ff
+! White
+XTerm*color7:      #cccccc
+XTerm*color15:     #ffffff
+
+! Bold wie am Linux VT: Grundsätzlich gibt es keine fetten Zeichen (die
+! sehen mit dem VGA-Font furchtbar aus bzw. gehen mit kleinem Terminus
+! gar nicht). Wurde explizit eine Farbe gesetzt und dann noch bold, dann
+! nimm die "Bold-Farbe" (alte Farbe + 8). Wurde gar keine Farbe gesetzt,
+! nimm weiß (= Farbe 15).
+XTerm*boldMode:     false
+XTerm*colorBDMode:  true
+XTerm*colorBD:      #FFFFFF
