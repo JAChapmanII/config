@@ -31,8 +31,8 @@ Host grandma g
 
 Host huxley
 	Hostname 24.165.212.10
-	Port 50001
-	User jac
+	Port 50002
+	User root
 
 Host mamtas m
 	Hostname 192.168.1.146
@@ -44,7 +44,7 @@ Host zetva z
 	User root
 
 Host ultra ul
-	Hostname 71.66.111.139
+	Hostname 98.27.134.163
 	Port 2909
 	User root
 
