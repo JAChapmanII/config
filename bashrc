@@ -55,8 +55,8 @@ function cd() {
 	# get absolute path
 	d="$(pwd)"
 
-	DIRBASE="$(dirname "/$HOST$d" | sed 's|/\([^/]\)[^/]*|/\1|g')"
-	DIREND="$(basename "/$HOST$d")"
+	DIRBASE="$(dirname "/$d" | sed 's|/\([^/]\)[^/]*|/\1|g')"
+	DIREND="$(basename "/$d")"
 
 	# If var ends in a /, strip it.
 	DIRBASE=${DIRBASE/%\//}
@@ -97,7 +97,8 @@ function cd() {
 		SPART='\[\e[0;31m\][32]\[\e[0m\]'
 	fi
 
-	export PS1="(${FDIR})${SPART}> "
+	HOSTP="\[\e[0;36m\]$(echo "${HOST}" | cut -d'.' -f1)\[\e[0m\]"
+	export PS1="(${HOSTP}/${FDIR})${SPART}> "
 }
 cd
 
