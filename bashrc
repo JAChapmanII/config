@@ -55,40 +55,32 @@ function cd() {
 	# get absolute path
 	d="$(pwd)"
 
-	DIRBASE="$(dirname "/$d" | sed 's|/\([^/]\)[^/]*|/\1|g')"
-	DIREND="$(basename "/$d")"
-
-	# If var ends in a /, strip it.
-	DIRBASE=${DIRBASE/%\//}
-	DIREND=${DIREND/%\//}
-
 	IFS=$'\n'
 	PPIECES=( $(echo $d | sed 's:/:\n:g') )
 	PMAP=
 
-	p=
 	for (( i = 0; i < ${#PPIECES[@]}; ++i )); do
-		p="$p/${PPIECES[$i]}"
-		builtin cd "$p"
-		if ! which git &> /dev/null; then
-			PMAP[$i]='\e[0;36m'
-		elif git rev-parse &>/dev/null; then
-			PMAP[$i]='\e[1;32m'
-		else
-			PMAP[$i]='\e[0;36m'
-		fi
+		PMAP[$i]='\e[0;36m'
 	done
-	unset IFS
+
+	if which git &> /dev/null; then
+		p=
+		for (( i = 0; i < ${#PPIECES[@]}; ++i )); do
+			p="$p/${PPIECES[$i]}"
+			builtin cd "$p"
+			if git rev-parse &> /dev/null; then
+				PMAP[$i]='\e[1;32m'
+			fi
+		done
+	fi
 	builtin cd "$d"
 
-	DIRN="${DIRBASE}/${DIREND}"
-	DIRN=${DIRN/#\//}
-
-	IFS=$'\n'
-	PPIECES=( $(echo $DIRN | sed 's:/:\n:g') )
-	FDIR='\[\e[0;36m\]'${PPIECES[0]}'\[\e[0m\]'
-	for (( i = 1; i < ${#PPIECES[@]}; ++i )); do
-		FDIR=$FDIR/'\['${PMAP[(($i - 1))]}'\]'${PPIECES[$i]}'\[\e[0m\]'
+	FDIR=
+	for (( i = 0; i < ${#PPIECES[@]}; ++i )); do
+		if (( i != ${#PPIECES[@]} - 1 )); then
+			PPIECES[$i]=${PPIECES[$i]:0:1}
+		fi
+		FDIR=$FDIR/'\['${PMAP[(($i))]}'\]'${PPIECES[$i]}'\[\e[0m\]'
 	done
 	unset IFS
 
@@ -97,8 +89,8 @@ function cd() {
 		SPART='\[\e[0;31m\][32]\[\e[0m\]'
 	fi
 
-	HOSTP="\[\e[0;36m\]$(echo "${HOST}" | cut -d'.' -f1)\[\e[0m\]"
-	export PS1="(${HOSTP}/${FDIR})${SPART}> "
+	HOSTP='\[\e[0;36m\]'$(echo "${HOST}" | cut -d'.' -f1)'\[\e[0m\]'
+	export PS1="(${HOSTP}${FDIR})${SPART}> "
 }
 cd
 
