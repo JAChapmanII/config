@@ -31,3 +31,5 @@
 	d = diff
 	b = branch
 	sm = submodule
+[push]
+	default = matching
