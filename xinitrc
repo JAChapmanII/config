@@ -19,6 +19,8 @@ xset r rate 160 80
 
 numlockx
 
+xkbset nullify lock
+
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
